@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cq-hsiao.github.io/"/>
-  <updated>2019-04-17T08:18:15.592Z</updated>
+  <updated>2019-04-17T16:16:29.436Z</updated>
   <id>http://cq-hsiao.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 Github Pages 和 Hexo 搭建自己的独立博客</title>
+    <link href="http://cq-hsiao.github.io/post/new-start/index.html"/>
+    <id>http://cq-hsiao.github.io/post/new-start/index.html</id>
+    <published>2019-04-17T15:39:43.000Z</published>
+    <updated>2019-04-17T16:16:29.436Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><font size="4"><p>一次偶然的机会发现了Hexo这个博客框架，自己花了几天时间也顺利把博客搭建了起来。</p></font></blockquote><h2 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h2><blockquote><p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，使用 Markdown（或其他渲染引擎）解析文章可以方便地生成静态网页托管在GitHub和Coding上，确实是一个快速、简洁且高效的博客框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p></blockquote><h2 id="如何搭建"><a href="#如何搭建" class="headerlink" title="如何搭建"></a>如何搭建</h2><font size="3"><br>自己也是从网上查询教程一步一步搭建的。这里推荐一个比较全面的教材。<br><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" title="hexo史上最全搭建教程" target="_blank" rel="noopener">https://blog.csdn.net/sinat_37781304/article/details/82729029</a><br><br>自己使用的主题是<a href="https://molunerfinn.com/hexo-theme-melody-doc/zh-Hans/" title="hexo-theme-melody使用文档" target="_blank" rel="noopener">hexo-theme-melody</a>，使用了pug模板引擎渲染静态页面，刚开始阅读和修改起来还是有些吃力的，自己也琢磨了一会才大概了解。<br><br>大多主题都集成了很多功能，这个主题支持RSS订阅功能、评论系统、分享系统、搜索系统、统计分析、动画效果等。几乎修改主题配置文件就可以实现了。<br><br>还想要美化自己的博客或者添加各种有趣好玩的功能和特效，比如看板娘、动态彩带。自己网上找相应的教程就好了。<br><a href="https://blog.csdn.net/qq_36759224/article/details/85420403" title="Hexo 博客优化之博客美化" target="_blank" rel="noopener">https://blog.csdn.net/qq_36759224/article/details/85420403</a><br><br></font>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;font size=&quot;4&quot;&gt;&lt;p&gt;一次偶然的机会发现了Hexo这个博客框架，自己花了几天时间也顺利把博客搭建了起来。&lt;/p&gt;&lt;/font&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Hexo简介&quot;&gt;&lt;a href=&quot;#Hexo简介&quot; class=&quot;h
+      
+    
+    </summary>
+    
+      <category term="个人" scheme="http://cq-hsiao.github.io/categories/%E4%B8%AA%E4%BA%BA/"/>
+    
+      <category term="博客" scheme="http://cq-hsiao.github.io/categories/%E4%B8%AA%E4%BA%BA/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="个人" scheme="http://cq-hsiao.github.io/tags/%E4%B8%AA%E4%BA%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
