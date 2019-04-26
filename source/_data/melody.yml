@@ -5,25 +5,36 @@
 # theme_color:
 #   enable: true
 #   main: "#49B1F5"
-#   paginator: "#00C4B6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00C4B6"
-#   link_color: "#858585"
-#   hr_color: "#A4D8FA"
+#   paginator: "#00C4B6" # 分页按钮
+#   button_hover: "#FF7242" # 触摸按钮
+#   text_selection: "#00C4B6" # 选择文字
+#   link_color: "#858585" # 链接
+#   hr_color: "#A4D8FA"  # 彩带
 #   tag_start_color: "#A4D8FA"
 #   tag_end_color: "#1B9EF3"
 
+theme_color:
+  enable: true # or false -> to use the default theme
+  main: "#54689a"
+  paginator: "#54689a"
+  button_hover: "#ff7242"
+  text_selection: "#54689a"
+  link_color: "#009688"
+  hr_color: "#000"
+  meta_color: "#858585"
+  tag_start_color: "#A4D8FA"
+  tag_end_color: "#1B9EF3"
 # Main menu navigation
 menu:
-  Home: /
-  Archives: /archives
-  Tags: /tags
-  Categories: /categories
+  主页: /
+  归档: /archives
+  标签: /tags
+  分类: /categories
   #XXX: /xxx
 
 # Favicon
 # ---------------
-favicon: /melody-favicon.ico
+favicon: /favicon7.ico
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -44,6 +55,7 @@ pwa:
 highlight_theme: default
 
 # code_word_wrap: true or false
+code_word_wrap: true
 
 # Nav settings
 # see the icon_name in fontawesome website.
@@ -51,6 +63,7 @@ highlight_theme: default
 # ---------------
 #social:
 social:
+  github fa: https://github.com/cq-hsiao
   rss fa: /atom.xml
 #icon_name fa: url
 #icon_name fab: url
@@ -66,7 +79,10 @@ algolia_search:
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/third-party-support?id=local-search
 # ---------------
 local_search:
-  enable: false
+  enable: true # or false
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}." # if there are no result
 
 # MathJax
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/third-party-support?id=mathjax
@@ -88,7 +104,9 @@ fireworks: true
 
 # Analysis
 # ---------------
-baidu_analytics:
+baidu_analytics: your code
+
+
 
 google_analytics:
 
@@ -128,7 +146,8 @@ cdn:
 # ---------------
 avatar: /img/my.jpeg
 
-top_img: true # false or url of img
+top_img: /img/4.jpg # false or url of img
+
 
 post_meta:
   date_type: created # created or updated
@@ -137,7 +156,7 @@ post_meta:
 
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/additional-package-support?id=word-counting
 wordcount:
-  enable: false
+  enable: true
 
 toc:
   enable: true
@@ -149,9 +168,9 @@ post_copyright:
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/theme-config?id=auto-excerpt
-# auto_excerpt:
-#   enable: false
-#   length: 150
+auto_excerpt:
+ enable: false
+ length: 150
 
 # slide
 # For reveal.js config, see https://github.com/hakimel/reveal.js#configuration
@@ -187,6 +206,9 @@ addThis:
 # sharejs:
 # enable: false
 # disabled_sites:
+sharejs:
+  enable: true
+  disabled_sites: google,facebook,twitter,linkedin,diandian,tencent
 
 # Comments System
 # ---------------
@@ -226,12 +248,32 @@ disqus:
 #   lang: zh-cn # i18n: zh-cn/en
 #   placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
 #   guest_info: nick,mail,link #valine comment header inf
+valine:
+  enable: true
+  appId:  your code
+  appKey: your code
+  notify: true
+  verify: false
+  pageSize: 10
+  avatar: mm
+  lang: zh-cn
+  placeholder: hello :)
+  guest_info: nick,mail,link
 
+leancloud_visitors:
+  enable: true
+  appId:  your code
+  appKey: your code
+  
 # Footer Settings
 # ---------------
-since: 2013
+since: 2018
 
-# footer_custom_text:
+footer_custom_text: <div class="footer_custom_text">Hosted by <a target="_blank" rel="external nofollow" href="https://pages.github.com"><b>Github Pages</b></a>
+                    <br></div>
+                    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+
+
 
 ICP:
   enable: false
@@ -243,15 +285,21 @@ busuanzi:
   enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
+#  site_uv_header: <i class="fa fa-user"></i>
+#  site_uv_footer:
+  site_uv_header: 欢迎您<span class="with-love" id="heart"><i class="fa fa-heart"></i></span> ，第
+  site_uv_footer:  位访客
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+#  site_pv_header: <i class="fa fa-eye"></i>
+#  site_pv_footer:
+  site_pv_header: 总访问量为
+  site_pv_footer:  次
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
+#  page_pv_header: <i class="fa fa-file-o"></i>
+#  page_pv_footer:
+  page_pv_header: 阅读次数：
   page_pv_footer:
 
 # Sidebar Settings
@@ -265,6 +313,11 @@ busuanzi:
 #   enable: true
 #   url: ''
 #   text: ''
+
+follow:
+  enable: true
+  url: 'https://github.com/cq-hsiao'
+  text: 'Follow Me'
 
 # Ads
 # ---------------
